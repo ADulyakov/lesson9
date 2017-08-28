@@ -39,6 +39,9 @@ button{
 .gray-bg {
 	background-color: #f8f8f8;
 }
+.ofw-hiden{
+	overflow: hidden;
+}
 /* DEFAULT CLASSES END */
 /* DEFAULT COMPONENT STYLE START */
 .btn{
@@ -62,6 +65,7 @@ button{
 	padding: 8px 14px;
 	background: rgba(229, 229, 229, 0.9);
 	letter-spacing: 0.2em;
+	font-size: 11px;
 }
 .btn-small:hover{
 	background: rgba(119, 119, 119, 1);
@@ -333,7 +337,6 @@ textarea.form-control{
 /* our-creative-works start */
 .our-creative-works{
 	background: url("../img/our-creative-works-bg.jpg") no-repeat center / cover;
-
 }
 .our-creative-works .title{
 	font-family: "Dosis", sans-serif;
@@ -678,6 +681,7 @@ textarea.form-control{
 }
 .contact-us-item{
 	margin-bottom: 80px;
+	overflow: hidden
 }
 .contact-us-icon{
 	width:25px;
@@ -770,6 +774,9 @@ textarea.form-control{
 	text-transform: uppercase;
 	font-variant: small-caps;
 	color: rgba(255, 255, 255, 0.75);
+}
+.on-map-block-text i.fa{
+	font-size: 12px;
 }
 /* map end */
 /* MAIN STYLE END*/
