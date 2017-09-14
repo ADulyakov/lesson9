@@ -150,6 +150,24 @@ textarea.form-control{
 .navbar-toggle .icon-bar{
 	background-color: #fff;
 }
+@media (max-width: 480px){
+	.btn{
+		letter-spacing: 0.2em;
+		padding: 8px 30px;
+		font-size: 12px;
+	}
+	blockquote{
+		font-size: 20px;
+	}
+	.title{
+		font-size: 16px;
+		margin-bottom: 45px;
+	}
+	.text-section{
+		font-size: 12px;
+		line-height: 1.73;
+	}
+}
 @media (max-width: 768px) {
 	.default-section{
 		padding: 70px 0;
@@ -167,8 +185,8 @@ textarea.form-control{
 .header{
 	padding: 30px 15px;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	width: 100%;
 	z-index: 99;
 }
@@ -188,15 +206,15 @@ textarea.form-control{
 .header-nav li + li{
 	margin-left: 30px;
 }
-@media(max-width: 767px){
+@media(max-width: 768px){
 	.header-nav{
 		position: absolute;
 		top:100%;
-		left: 0px;
-		right: 0px;
+		left: 0;
+		right: 0;
 		z-index: 999;
 		background: rgb(0, 0, 0);
-		padding: 20px 0px;
+		padding: 20px 0;
 	}
 	.header-nav li{
 		display: block;
@@ -254,6 +272,7 @@ textarea.form-control{
 	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 1.7em;
+	text-indent: 1.7em;
 	margin-bottom: 100px;
 }
 .inner-content span{
@@ -274,9 +293,22 @@ textarea.form-control{
 	.inner-content h6{
 		font-size: 22px;
 		margin-bottom: 50px;
+		letter-spacing: 0.7em;
+		text-indent: 0.7em;
 	}
 	.inner-content span{
 		font-size: 16px;
+	}
+}
+@media(max-width: 480px){
+	.inner-content h6 {
+		margin-bottom: 25px;
+		font-size: 20px;
+		letter-spacing: 0.5em;
+		text-indent: 0.5em;
+	}
+	.inner-content span {
+		font-size: 12px;
 	}
 }
 /* inner end*/
@@ -285,7 +317,7 @@ textarea.form-control{
 	margin-top: 100px;
 }
 .team-item-info{
-	padding: 25px 5px 0px;
+	padding: 25px 5px 0;
 	font-family: "Dosis", sans-serif;
 	color: #777;
 	font-weight: 400;
@@ -333,6 +365,17 @@ textarea.form-control{
 		padding-top: 10px;
 	}
 }
+
+@media (max-width: 480px) {
+	.about-studio .title{
+		text-align: center;
+		margin-bottom: 45px;
+	}
+	.about-studio .text-section{
+		font-size: 12px;
+	}
+
+}
 /* about-studio end */
 /* our-creative-works start */
 .our-creative-works{
@@ -348,6 +391,9 @@ textarea.form-control{
 }
 /* our-creative-works end */
 /* why-choose-us start */
+.choose-us-block{
+	margin-bottom: 80px;
+}
 .why-choose-us .title{
 	text-align: center;
 }
@@ -360,7 +406,6 @@ textarea.form-control{
 }
 .why-choose-us-text {
 	margin-top: 30px;
-	margin-bottom: 80px;
 }
 .why-choose-us-text h6{
 	font-family: "Dosis", sans-serif;
@@ -379,6 +424,14 @@ textarea.form-control{
 	color: #838383;
 	padding-top: 35px;
 	line-height: 26px;
+}
+@media (max-width: 768px){
+	.choose-us-block{
+		margin-bottom: 40px;
+	}
+	.text-section{
+		padding: 0 10px;
+	}
 }
 /* why-choose-us end*/
 /* cervices start */
@@ -412,7 +465,7 @@ textarea.form-control{
 	display: block;
 	font-family: "Dosis", sans-serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 13px;
 	letter-spacing: 0.4em;
 	color: #111111;
 	font-variant: small-caps;
@@ -433,6 +486,15 @@ textarea.form-control{
 	.tab-content .tab-pane{
 		padding-top: 50px;
 	}
+	.nav-tabs li .icon {
+		font-size: 38px;
+	}
+}
+@media (max-width: 480px){
+	.nav-tabs li {
+    width: 33.3333%;
+    margin-bottom: 20px;
+	}
 }
 /* cervices end */
 /* lets-talk start */
@@ -442,7 +504,7 @@ textarea.form-control{
 .lets-talk-content{
 	font-family: "Dosis", sans-serif;
 	font-weight: 300;
-	margin: 140px 0px;
+	margin: 140px 0;
 }
 .lets-talk-content .title{
 	margin-bottom: 22px;
@@ -456,7 +518,11 @@ textarea.form-control{
 .lets-talk-img{
 	margin-top: -32px;
 }
-
+@media (max-width: 480px){
+	.lets-talk-content .title{
+		line-height: 1.5em;
+	}
+}
 /* lets-talk end */
 /* portfolio start */
 .portfolio{
@@ -464,11 +530,12 @@ textarea.form-control{
 }
 .portfolio .title{
 	padding-top: 140px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 .portfolio-text{
-	width: 766px;
+	max-width: 766px;
 	margin: 80px auto;
+	color: #777777;
 }
 .portfolio-tabs .nav-tabs {
 	border: none;
@@ -479,10 +546,9 @@ textarea.form-control{
 	width: 25%;
 }
 .portfolio-container .row{
-	margin-right: 0px;
-	margin-left: 0px;
+	margin-right: 0;
+	margin-left: 0;
 }
-
 .portfolio-col{
 	float: left;
 	width:33.3%;
@@ -491,14 +557,21 @@ textarea.form-control{
 .portfolio-img img{
 	width: 100%;
 }
-
 @media  (max-width: 991px) {
 	.portfolio-text {
-		width: 721px;
-		padding: 0px 15px;
+		max-width: 721px;
+		padding: 0 15px;
 	}
 }
+@media (max-width: 480px) {
+	.portfolio-tabs .nav-tabs{
+		margin: 40px auto 0;
+	}
+	.portfolio-nav li {
+		width: 50%;
+	}
 
+}
 /* portfolio end */
 /* reviews start*/
 .reviews{
@@ -531,10 +604,26 @@ textarea.form-control{
 .icon-wrap span{
 	font-size: 32px;
 }
-@media (min-width: 768px) {
-	.carousel-indicators{
+
+@media (max-width: 480px) {
+	.reviews .carousel-caption p{
+		max-width: 300px;
+ 	}
+}
+@media (max-width: 768px) {
+	.carousel .carousel-indicators {
 		bottom: -20%;
 	}
+
+	.reviews .carousel-caption p {
+		font-size: 14px;
+		line-height: 2.14;
+		max-width: 450px;
+		margin: 0 auto 20px auto;
+	}
+}
+.carousel-indicators{
+	bottom: -45%;
 }
 .carousel-indicators li{
 	width: 9px;
@@ -586,8 +675,28 @@ textarea.form-control{
 	left: auto;
 	right: 20px;
 }
+
+@media (max-width: 480px) {
+	.reviews .carousel-caption .title {
+		margin-bottom: 30px;
+	}
+	.icon-wrap span {
+		font-size: 28px;
+	}
+	.reviews .carousel-caption p {
+		display: inline-block;
+		font-size: 12px;
+		margin: 20px;
+	}
+
+	.carousel-control::before{
+		width: 72px;
+		height: 72px;
+	}
+}
 /* reviews end */
 /* latest news start */
+
 
 .title-content{
 	font-family: "Dosis", sans-serif;
@@ -610,7 +719,6 @@ textarea.form-control{
 .news-item-info{
 	font-family: "Dosis", sans-serif;
 	font-weight: 400;
-	text-transform: uppercase;
 	margin: 30px 0;
 }
 .news-item-info span{
@@ -621,21 +729,24 @@ textarea.form-control{
 	letter-spacing: 0.2em;
 	color: #777777;
 	margin-bottom: 15px;
+	text-transform: uppercase;
 }
 .news-item-date{
 	font-size: 11px;
 	letter-spacing: 0.2em;
 	color: #999999;
+	margin-bottom: 30px;
 }
-.news-item {
+.news-item{
 	font-size: 15px;
 	line-height: 1.73;
 	color: #777777;
 }
-.news-item p{
+.news-item-info p{
 	padding-bottom: 30px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 }
-
 @media (max-width: 991px) {
 	.news-item {
 		font-size: 12px;
@@ -648,8 +759,35 @@ textarea.form-control{
 	.news-item-date{
 		letter-spacing: 0.1em;
 	}
+}
+@media (max-width: 768px){
+	.news-item{
+		text-align: center;
+	}
+	.news-item-info{
+		max-width: 370px;
+		margin: 30px auto;
+	}
+}
+@media (max-width: 480px) {
+	.latest-news-info{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.title-content .title h6 {
+		float: none;
+		padding-bottom: 30px;
+	}
+	.title-content a{
+		float: none;
 
-
+	}
+	.latest-news .news-item-info{
+		padding: 0 35px;
+	}
+	.latest-news .news-img{
+		text-align: center;
+	}
 }
 /* latest news end*/
 /* subscribe start */
@@ -664,7 +802,14 @@ textarea.form-control{
 }
 .subscribe .after-text i{
 	margin-top: 20px;
-
+}
+@media (max-width: 768px) {
+	.small-section-wrap {
+		text-align: center;
+	}
+	.form-control{
+		margin: 0 auto;
+	}
 }
 /* subscribe end */
 /* contact-us start */
@@ -681,7 +826,8 @@ textarea.form-control{
 }
 .contact-us-item{
 	margin-bottom: 80px;
-	overflow: hidden
+	overflow: hidden;
+	padding: 6px 0 0 6px;
 }
 .contact-us-icon{
 	width:25px;
@@ -716,6 +862,14 @@ textarea.form-control{
 	font-size: 15px;
 	line-height: 1.6;
 	color: #444444;
+}
+@media (max-width: 768px){
+	.contact-us-item{
+		margin-bottom: 40px;
+	}
+	.form-col{
+		width: 100%;
+	}
 }
 /* contact-us end */
 /* map start */
@@ -802,8 +956,9 @@ textarea.form-control{
 	padding-bottom: 20px;
 }
 .footer-social{
-	padding-top: 20px;
-	padding-bottom: 100px;
+	overflow: hidden;
+	display: inline-block;
+	padding: 20px 10px;
 }
 .footer-social span{
 	display: inline-block;
@@ -813,7 +968,10 @@ textarea.form-control{
 	transform: rotate(45deg);
 	border-radius: 3px;
 }
-.footer-social span + span{
+.footer-social li{
+	float: left;
+}
+.footer-social li + li{
 	margin-left: 23px;
 }
 .footer-social a{
@@ -822,6 +980,9 @@ textarea.form-control{
 .footer-social i.fa{
 	line-height: 22px;
 	transform: rotate(-45deg);
+}
+.footer-content{
+	margin-top: 80px;
 }
 .footer-content span{
 	display: block;
@@ -838,6 +999,6 @@ textarea.form-control{
 .footer-text {
 	font-size: 11px;
 	color: #999999;
-
 }
+
 /* FOOTER STYLE END */
